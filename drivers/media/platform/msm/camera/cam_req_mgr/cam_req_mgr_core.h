@@ -339,6 +339,8 @@ struct cam_req_mgr_core_link {
 	atomic_t                             is_used;
 	bool                                 is_master;
 	bool                                 initial_skip;
+	bool								 in_msync_mode;
+	int64_t 							 initial_sync_req;
 };
 
 /**
