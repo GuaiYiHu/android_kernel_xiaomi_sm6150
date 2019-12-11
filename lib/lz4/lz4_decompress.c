@@ -49,6 +49,7 @@
 #ifndef assert
 #define assert(condition) ((void)0)
 #endif
+#define memcpy __builtin_memcpy
 
 /*
  * LZ4_decompress_generic() :

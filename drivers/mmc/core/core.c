@@ -3579,7 +3579,7 @@ static int mmc_cmdq_do_erase(struct mmc_cmdq_req *cmdq_req,
 	unsigned int qty = 0;
 	unsigned long timeout;
 	unsigned int fr, nr;
-	int loop_udelay=64, udelay_max=32768;
+	//int loop_udelay=64, udelay_max=32768;
 	int err;
 
 	fr = from;
