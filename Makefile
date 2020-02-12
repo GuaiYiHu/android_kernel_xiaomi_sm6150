@@ -695,6 +695,10 @@ KBUILD_CFLAGS   += -O3
 endif
 endif
 
+ifeq ($(call clang-ifversion, -ge, 0700, y), y)
+KBUILD_CFLAGS += -march=armv8.2-a+crc+crypto
+endif
+
 KBUILD_CFLAGS += $(call cc-ifversion, -lt, 0409, \
 			$(call cc-disable-warning,maybe-uninitialized,))
 
